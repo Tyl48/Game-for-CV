@@ -10,4 +10,11 @@ public class LevelMenu : MonoBehaviour
         string levelName = "level " + LevelID;
         SceneManager.LoadScene(levelName);
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
 }
